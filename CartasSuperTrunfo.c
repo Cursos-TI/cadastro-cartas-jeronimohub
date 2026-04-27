@@ -122,62 +122,76 @@ int main(){
     printf("PIB per Capita1 > PIB per Capita2: %d\n", cdpib > cdpib1);
     printf("Super Poder1 > Super Poder2: %d \n \n", superpoder > superpoder1);
 
-// Comparaão das cartas usando if e if-else
+// Comparaão das cartas usando if-else
    //Atributo população
    printf("Atributo população:\n");
    if(Populacao1 > Populacao2){
-    printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
-    printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+         printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
+   } else if(Populacao1 < Populacao2){
+         printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   } else{
+         printf("Houve um empate!\n");
    }
 
    //Atributo Área
    printf("Atributo Área:\n");
    if(Area1 > Area2){
     printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
+   } else if(Area1 < Area2) {
     printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   } else {
+      printf("Houve um empate!\n");
    }
 
    //Atributo PIB
    printf("Atributo PIB:\n");
    if(Pib1 > Pib2){
     printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
+   } else if (Pib1 < Pib2) {
     printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   } else {
+      printf("Houve um empate!\n");
    }
 
    //Atributo Pontos turísticos
    printf("Atributo Pontos Turísticos:\n");
    if(Numerodepontosturisticos1 > Numerodepontosturisticos2){
     printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
+   } else if (Numerodepontosturisticos1 < Numerodepontosturisticos2) {
     printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   } else {
+    printf("Houve um empate!\n");
    }
 
    //Atributo Densidade populacional
    printf("Atributo  Densidade Populacional:\n");
-   if(divisao > divisao2 ){
+   if(divisao < divisao2 ){
     printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
+   } else if (divisao > divisao2){
     printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   } else{
+    printf("Houve um empate!\n");
    }
 
    //Atributo PIB per capita
    printf("Atributo PIB Per Capita:\n");
    if(cdpib > cdpib1){
     printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
+   } else if (cdpib < cdpib1){
     printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   } else{
+    printf("Houve um empate!\n");
    }
 
    //Atributo Super poder
    printf("Atributo Super Poder:\n");
    if(superpoder > superpoder1){
     printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
-   } else {
+   } else if(superpoder < superpoder1){
     printf("Carta2: (%s) venceu\n\n", Nomedacidade2);
+   }else{
+    printf("Houve um empate!\n");
    }
-//olá mundo 
+
     return 0;
 }
