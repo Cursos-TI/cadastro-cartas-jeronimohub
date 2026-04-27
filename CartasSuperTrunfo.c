@@ -123,8 +123,26 @@ int main(){
     printf("Super Poder1 > Super Poder2: %d \n \n", superpoder > superpoder1);
 
 // Comparaão das cartas usando if-else
+
+int opcao;
+
+    printf("Menu Principal\n");
+    printf("Qual atributo quer comparar?\n");
+    printf("1.População\n");
+    printf("2.Área\n");
+    printf("3.PIB\n");
+    printf("4.Número de pontos turísticos\n");
+    printf("5.Densidade populacional\n");
+    printf("6.PIB per capita\n");
+    printf("7.Super poder\n");
+    printf("Escolha:\n");
+    scanf("%d",&opcao);
+
+    switch (opcao)
+    {
+      case 1:
    //Atributo população
-   printf("Atributo população:\n");
+          printf("Atributo população:\n");
    if(Populacao1 > Populacao2){
          printf("Carta1 (%s) venceu!\n\n", Nomedacidade1);
    } else if(Populacao1 < Populacao2){
@@ -132,7 +150,9 @@ int main(){
    } else{
          printf("Houve um empate!\n");
    }
+    break;
 
+      case 2:
    //Atributo Área
    printf("Atributo Área:\n");
    if(Area1 > Area2){
@@ -142,7 +162,9 @@ int main(){
    } else {
       printf("Houve um empate!\n");
    }
+   break;
 
+      case 3:
    //Atributo PIB
    printf("Atributo PIB:\n");
    if(Pib1 > Pib2){
@@ -152,7 +174,9 @@ int main(){
    } else {
       printf("Houve um empate!\n");
    }
+   break;
 
+      case 4:
    //Atributo Pontos turísticos
    printf("Atributo Pontos Turísticos:\n");
    if(Numerodepontosturisticos1 > Numerodepontosturisticos2){
@@ -162,7 +186,9 @@ int main(){
    } else {
     printf("Houve um empate!\n");
    }
+   break;
 
+      case 5:
    //Atributo Densidade populacional
    printf("Atributo  Densidade Populacional:\n");
    if(divisao < divisao2 ){
@@ -172,7 +198,9 @@ int main(){
    } else{
     printf("Houve um empate!\n");
    }
+   break;
 
+      case 6:
    //Atributo PIB per capita
    printf("Atributo PIB Per Capita:\n");
    if(cdpib > cdpib1){
@@ -182,7 +210,9 @@ int main(){
    } else{
     printf("Houve um empate!\n");
    }
+   break;
 
+      case 7:
    //Atributo Super poder
    printf("Atributo Super Poder:\n");
    if(superpoder > superpoder1){
@@ -192,6 +222,8 @@ int main(){
    }else{
     printf("Houve um empate!\n");
    }
-
+   default:
+   printf("Opção inválida");
+  }
     return 0;
 }
